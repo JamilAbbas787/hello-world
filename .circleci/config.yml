@@ -17,6 +17,9 @@ jobs:
           # Must be relative path from root
           paths:
             - echo-output
+      - add_ssh_keys:
+          fingerprints:
+            - "SHA256:hVzHSZTN6v5Z04atguA9jRuMK9g/UluWyWwVvJ2EfwA"
   two:
     docker:
       - image: cimg/ruby:3.0.2
